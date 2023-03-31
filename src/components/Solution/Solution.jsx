@@ -21,7 +21,10 @@ const Solution = (props) => {
                         </div>
                         <div className="card-body">
                               <h5 className="card-title">{title}</h5>
+                              <p className='mt-5'>#programming  #Coding</p>
                         </div>
+                        
+                        <button  className='w-25 border-0 text-start bg-transparent text-info'>Mark as read</button>
                   </div>
 
             </div>

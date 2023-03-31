@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './DigitalSolution.css';
 import Solution from '../Solution/Solution';
+import SpentTime from '../SpentTime/SpentTime';
 
 const DigitalSolution = () => {
       const [items, setItems] = useState([]);
@@ -19,8 +20,8 @@ const DigitalSolution = () => {
                               />)
                         }
                   </div>
-                  <div>
-                        <h1>dfhaksjfhajks sdfjn</h1>
+                  <div className='storedAction'>
+                        <SpentTime />
                   </div>
             </div>
       );
