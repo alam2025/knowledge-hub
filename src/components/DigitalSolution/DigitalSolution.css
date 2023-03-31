@@ -1,0 +1,6 @@
+.digital-content{
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 70% 30%;
+      gap: 20px;
+}
