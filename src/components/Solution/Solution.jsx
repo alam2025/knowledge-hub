@@ -4,7 +4,7 @@ import Profile from '../Profile/Profile';
 
 const Solution = (props) => {
       console.log(props.solution);
-      const { cover_image ,image,author_name,publish_date} = props.solution;
+      const { cover_image ,image,author_name,publish_date,read_time, title } = props.solution;
      
 
       return (
@@ -16,12 +16,11 @@ const Solution = (props) => {
                                     image={image}
                                     name={author_name}
                                     publish_date={publish_date}
+                                    read_time={read_time}
                                />
                         </div>
                         <div className="card-body">
-                              <h5 className="card-title">Card title</h5>
-                              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                              <h5 className="card-title">{title}</h5>
                         </div>
                   </div>
 

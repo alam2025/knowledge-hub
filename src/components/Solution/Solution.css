@@ -1,9 +1,22 @@
-.solution{
-      
-}
-.card-img, .card-img-top{
+.solution {}
+
+.card-img,
+.card-img-top {
       border-radius: var(--bs-card-inner-border-radius);
 }
-.card{
+
+.card {
       --bs-card-border-width: 0;
+}
+
+.card-title {
+      font-family: 'Exo 2';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 160%;
+      /* or 64px */
+
+
+      color: #111111;
 }
