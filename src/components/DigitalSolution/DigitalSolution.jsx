@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './DigitalSolution.css';
 import Solution from '../Solution/Solution';
-import SpentTime from '../SpentTime/SpentTime';
+
+import Cart from '../Cart/Cart';
 
 const DigitalSolution = () => {
       const [items, setItems] = useState([]);
@@ -20,8 +21,8 @@ const DigitalSolution = () => {
                               />)
                         }
                   </div>
-                  <div className='storedAction'>
-                        <SpentTime />
+                  <div >
+                        <Cart />
                   </div>
             </div>
       );
