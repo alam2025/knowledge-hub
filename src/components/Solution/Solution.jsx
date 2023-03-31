@@ -1,11 +1,14 @@
 import React from 'react';
 import './Solution.css';
 import Profile from '../Profile/Profile';
+import { addTime } from '../utilities/addToCart';
 
 const Solution = (props) => {
-      console.log(props.solution);
-      const { cover_image ,image,author_name,publish_date,read_time, title } = props.solution;
+      const { id,cover_image ,image,author_name,publish_date,read_time, title } = props.solution;
+
      
+      const addReadTime=props.addReadTime;
+      const addBookMark = props.addBookMark;
 
       return (
             <div className='solution'>
@@ -13,10 +16,8 @@ const Solution = (props) => {
                         <img src={cover_image} className="card-img-top" alt="..." />
                         <div>
                               <Profile
-                                    image={image}
-                                    name={author_name}
-                                    publish_date={publish_date}
-                                    read_time={read_time}
+                              solution ={props.solution}
+                                    addBookMark={addBookMark}
                                />
                         </div>
                         <div className="card-body">
@@ -24,7 +25,7 @@ const Solution = (props) => {
                               <p className='mt-5'>#programming  #Coding</p>
                         </div>
                         
-                        <button  className='w-25 border-0 text-start bg-transparent text-info'>Mark as read</button>
+                        <button onClick={()=>addReadTime(props.solution)}  className='w-25 border-0 text-start bg-transparent mark'>Mark as read</button>
                   </div>
 
             </div>
