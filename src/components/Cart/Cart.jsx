@@ -4,7 +4,7 @@ import BookMark from '../BookMark/BookMark';
 
 
 
-const Cart = ({ cart, bookmark }) => {
+const Cart = ({ cart, bookmark ,blog}) => {
       
             // console.log(bookmark);
       
@@ -31,7 +31,7 @@ const Cart = ({ cart, bookmark }) => {
                         <h5>Spent time on read : {read} </h5>
                   </div>
                   <div className='bookMark mt-4'>
-                        <h5>BookMarked Blogs :</h5>
+                        <h5>BookMarked Blogs : {blog}</h5>
                        
                          {
                               bookmark.map(b=><BookMark

@@ -3,9 +3,10 @@ import './DigitalSolution.css';
 import Solution from '../Solution/Solution';
 
 import Cart from '../Cart/Cart';
-import { faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
 
-const DigitalSolution = () => {
+
+const DigitalSolution = ({showToastMessage}) => {
+      const [count,setCount]=useState(0);
       const [items, setItems] = useState([]);
       const [cart, setCart]=useState([]);
       const [bookmark, setBookmark]=useState([]);
@@ -26,11 +27,12 @@ const DigitalSolution = () => {
             
             const exist = bookmark.find(b=>b.id === solution.id);
             if(!exist){
+                  setCount(count+1);
                   const newBookmark = [...bookmark,solution]
                   setBookmark(newBookmark);
             }
             else{
-                  console.log('fhsdfh');
+                  showToastMessage();
             }
             
       };
@@ -47,14 +49,17 @@ const DigitalSolution = () => {
                                     solution={solution}
                                     addReadTime ={addReadTime}
                                     addBookMark ={addBookMark}
-                                   
+                                 
                               />)
+
                         }
+                        {/* <ToastContainer />; */}
                   </div>
                   <div >
                         <Cart   
                         cart={cart}  
-                        bookmark ={bookmark}         
+                        bookmark ={bookmark}   
+                        blog={count}      
                         />
                   </div>
             </div>

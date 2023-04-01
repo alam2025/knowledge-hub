@@ -4,3 +4,11 @@
       grid-template-columns: 70% 30%;
       gap: 20px;
 }
+
+@media (max-width:992px) {
+      .digital-content{
+            grid-template-columns: 90%;
+
+      }
+      
+}

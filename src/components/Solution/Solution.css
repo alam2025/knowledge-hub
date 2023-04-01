@@ -23,3 +23,13 @@
 .mark{
       color: #6047EC;
 }
+
+@media (max-width:992px) {
+      
+.card-title {
+      
+      font-size: 25px;
+     
+}
+      
+}

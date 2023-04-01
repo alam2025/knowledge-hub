@@ -21,6 +21,7 @@ const Profile = (props) => {
                   <div>
                         <p>{read_time} min   <span onClick={()=>addBookMark(props.solution)} className='p-2'><FontAwesomeIcon icon={faBookmark} /></span></p>
                   </div>
+                 
             </div>
       );
 };
