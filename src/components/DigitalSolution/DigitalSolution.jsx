@@ -55,7 +55,7 @@ const DigitalSolution = ({showToastMessage}) => {
                         }
                         {/* <ToastContainer />; */}
                   </div>
-                  <div >
+                  <div className=''>
                         <Cart   
                         cart={cart}  
                         bookmark ={bookmark}   

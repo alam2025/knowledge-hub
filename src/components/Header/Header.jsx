@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css'
 
-const Header = ({scrollToSection,blog}) => {
+const Header = () => {
       
       return (
             <div className='header container'>
@@ -18,10 +18,10 @@ const Header = ({scrollToSection,blog}) => {
                                          
                                     </ul>
                                     <ul className='menu-item d-flex justify-content-center align-items-center'>
-                                         <a id='blog' href="/blog">Blog</a>
-                                         <a href="/about">About</a>
-                                         <a href="/contact">Conatact</a>
-                                         <img  src="/public/Profile.png" alt="" />
+                                         <a id='blog' href="#">Blog</a>
+                                         <a href="#">About</a>
+                                         <a href="#">Conatact</a>
+                                         <img  src="/public/avatar.jpg" alt="profile" />
 
                                     </ul>
                               </div>

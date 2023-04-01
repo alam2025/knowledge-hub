@@ -6,15 +6,15 @@ const Blog = () => {
             <div className='my-5 blog'>
                   <h1 className='text-center text-danger'>Important Interview Questions !!!</h1>
                   <div className='questions-container'>
-                        <div class="accordion " id="accordionExample">
-                              <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div className="accordion " id="accordionExample">
+                              <div className="accordion-item">
+                                    <h2 className="accordion-header" id="headingOne">
+                                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                 1. Props vs state.
                                           </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
+                                    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                          <div className="accordion-body">
                                                 In the context of web development with React, <strong>props and state </strong> are both used to manage and update the data that is displayed on the user interface. <br /><br />
 
                                                 Props (short for "properties") are used to pass data from a parent component to a child component. Props are read-only and cannot be modified by the child component. The parent component sets the initial value for the prop, and then the child component can use the prop value to render its output.<br /><br />
@@ -25,14 +25,14 @@ const Blog = () => {
                                           </div>
                                     </div>
                               </div>
-                              <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <div className="accordion-item">
+                                    <h2 className="accordion-header" id="headingTwo">
+                                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                 2. How does useState work?
                                           </button>
                                     </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
+                                    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div className="accordion-body">
 
                                                 useState is a built-in hook in React that allows functional components to have state variables.
                                                 <br /> <br />
@@ -46,14 +46,14 @@ const Blog = () => {
                                           </div>
                                     </div>
                               </div>
-                              <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <div className="accordion-item">
+                                    <h2 className="accordion-header" id="headingThree">
+                                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                 3. Purpose of useEffect other than fetching data.
                                           </button>
                                     </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
+                                    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                          <div className="accordion-body">
                                                 The useEffect hook in React is primarily used to manage side effects in functional components. While fetching data from an API is a common side effect, useEffect can also be used for a variety of other purposes, such as: <br /><br />
 
                                                 Updating the title of the document: You can use useEffect to update the title of the document based on the state of the component. For example, you might want to update the title to reflect the current page or to display a notification if there are unsaved changes.<br /><br />
@@ -69,14 +69,14 @@ const Blog = () => {
                                           </div>
                                     </div>
                               </div>
-                              <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFour">
-                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              <div className="accordion-item">
+                                    <h2 className="accordion-header" id="headingFour">
+                                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                                 4. How Does React work?
                                           </button>
                                     </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                          <div class="accordion-body">
+                                    <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                          <div className="accordion-body">
                                                 React is a JavaScript library that allows developers to create user interfaces (UIs) for web applications. React works by using a component-based architecture, where UI elements are broken down into smaller, reusable components.
                                                 <br /><br />
 
@@ -90,7 +90,7 @@ const Blog = () => {
 
                                                 Data flow: React uses a unidirectional data flow, where data flows down from parent components to child components through props. Child components can also update the data by calling functions passed down through props, but cannot modify the data directly.<br /><br />
 
-                                                Hooks: React provides a set of hooks (such as useState and useEffect) that allow functional components to have state and manage side effects. This makes it easier to create and manage complex UIs without needing to use class components.
+                                                Hooks: React provides a set of hooks (such as useState and useEffect) that allow functional components to have state and manage side effects. This makes it easier to create and manage complex UIs without needing to use className components.
                                           </div>
                                     </div>
                               </div>
