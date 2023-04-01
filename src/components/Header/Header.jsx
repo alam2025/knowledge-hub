@@ -1,7 +1,8 @@
 import React from 'react';
 import './Header.css'
 
-const Header = () => {
+const Header = ({scrollToSection,blog}) => {
+      
       return (
             <div className='header container'>
                   <nav className="navbar navbar-expand-lg bg-white">
@@ -17,7 +18,7 @@ const Header = () => {
                                          
                                     </ul>
                                     <ul className='menu-item d-flex justify-content-center align-items-center'>
-                                         <a href="/blog">Blog</a>
+                                         <a id='blog' href="/blog">Blog</a>
                                          <a href="/about">About</a>
                                          <a href="/contact">Conatact</a>
                                          <img  src="/public/Profile.png" alt="" />

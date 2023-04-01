@@ -1,0 +1,15 @@
+.blog{
+      background-color: gainsboro;
+      padding:  50px 10px;
+      border-radius: 10px;
+}
+
+/* .questions-container{
+      display: grid;
+      grid-template-columns: 60% 35%;
+      gap: 5%;
+} */
+
+.questions-container img{
+      
+}
